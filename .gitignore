@@ -1,0 +1,4 @@
+*.conf
+.vscode
+*.lock
+Pipfile
