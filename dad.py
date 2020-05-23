@@ -28,18 +28,14 @@ def OpenAuthFile():
     
 
 
-# TODO: implement this
-# Checks for avail for sale domains
-def do_search(domain):
-    payload = {'domain': 'name'}
-    url = f'https://api.godaddy.com/v1/domains/available?{payload}&checkType=FAST&forTransfer=false'
-    r = requests.get(url, headers=headers)
-    print(r.text)
-
-
-
-# Check avail domain
+# TODO: implement search avail for sale domains
 # "https://godaddy.com/v1/domains/available?domain=boboyaz1.co&checkType=FAST&forTransfer=false"
+
+# TODO: implement delete
+#
+# get all domain records https://api.godaddy.com/v1/domains/biheiri.com/records/
+# iterate, collect, subtract, repopulate
+# load data to do_add function
 
 # Gets records from your domain
 def do_get(domain, record_type, name):
@@ -71,7 +67,7 @@ def do_add(domain, record_type, name, value, ttl):
 # Parse the arguments
 #
 
-# TODO: Format the help - https://stackoverflow.com/questions/50021282/python-argparse-how-can-i-add-text-to-the-default-help-message/50021346
+
 parser = argparse.ArgumentParser( 
 usage=\
 '''dad.py [-h] [-g GET | -a ADD | -d DELETE] -r {A,AAAA,CNAME,TXT,MX,SRV,SOA,NS} -n NAME [-v VALUE] [--ttl TTL]
