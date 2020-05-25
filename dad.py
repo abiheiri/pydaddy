@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 #
 # This application manipulates the godaddy API
 #
