@@ -4,12 +4,13 @@
 #
 # 20200519 - Al Biheiri <al@forgottheaddress.com>
 
-prog='dad'
-version='0.5'
-author='Al Biheiri (al@forgottheaddress.com)'
+
 
 import requests, argparse, sys
 
+prog='dad'
+version='0.5'
+author='Al Biheiri (al@forgottheaddress.com)'
 
 def OpenAuthFile():
     try:
